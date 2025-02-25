@@ -1,6 +1,6 @@
-"""Decimal number to any base"""
+"""Decimal number to any base. Works only with int numbers"""
 
-N_BASE10: int = 119
+N_BASE10: int = 0.25
 BASE: int = 2
 
 quotient: int = int()
@@ -27,9 +27,9 @@ while True:
     if quotient_list[-1] == 0:
         break
 
-ordered_div_remainder_list = div_remainder_list[::-1]
+ordered_div_remainder_list: list[int] = div_remainder_list[::-1]
 
-result = str()
+result: str = str()
 for remainder in ordered_div_remainder_list:
     result += str(remainder)
 
