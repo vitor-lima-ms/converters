@@ -2,8 +2,8 @@ from fpdf import FPDF # type: ignore
 from pathlib import Path
 import os
 
-#Funcao para converter (https://www.geeksforgeeks.org/convert-python-file-to-pdf/)
-def convert_to_pdf_fpdf(input_file, output_pdf):
+#Function to convert (https://www.geeksforgeeks.org/convert-python-file-to-pdf/)
+def convert_to_pdf_fpdf(input_file, output_pdf) -> None:
     pdf = FPDF()
     pdf.add_page()
     pdf.set_font(family='Arial', size=12)
