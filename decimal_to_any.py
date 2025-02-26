@@ -1,6 +1,6 @@
 """Decimal number to any base. Works only with int numbers"""
 
-N_BASE10: int = 0.25
+N_BASE10: int = 37
 BASE: int = 2
 
 quotient: int = int()
